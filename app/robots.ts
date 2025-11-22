@@ -1,6 +1,9 @@
 import type { MetadataRoute } from 'next'
 import { WEBSITE_URL } from '@/lib/constants'
 
+// Ensure this metadata route is treated as static when using `output: 'export'`
+export const dynamic = 'force-static'
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {

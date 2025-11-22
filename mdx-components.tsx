@@ -12,12 +12,14 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     }: {
       src: string
       alt: string
-      caption: string
+      caption?: string
     }) => {
       return (
         <figure>
-          <img src={src} alt={alt} className="rounded-xl" />
-          <figcaption className="text-center">{caption}</figcaption>
+          <div className="aspect-video w-full overflow-hidden rounded-xl">
+            <img src={src} alt={alt} className="w-full h-full object-cover rounded-t-xl" />
+          </div>
+          {caption ? <figcaption className="text-center mt-2">{caption}</figcaption> : null}
         </figure>
       )
     },

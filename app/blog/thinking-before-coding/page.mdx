@@ -1,0 +1,198 @@
+export const metadata = {
+  title: "Building an App Isn’t Hard — Thinking It Through Is",
+  description:
+    "Modern tooling makes development faster than ever, but the real challenge is designing software that makes sense. Good apps start with clear thinking, not just good frameworks.",
+  authors: [
+    { name: "Andre GB Farias", url: "https://github.com/andreriffen" }
+  ],
+  keywords: [
+    "software architecture",
+    "domain modeling",
+    "system design",
+    "DDD",
+    "engineering",
+    "web development"
+  ],
+  openGraph: {
+    title: "Building an App Isn’t Hard — Thinking It Through Is",
+    description:
+      "Modern tools accelerate development, but only clear domain thinking creates long-lasting software. Architecture first, technology second.",
+    type: "article",
+    url: "https://andreriffen.github.io/resume/blog/thinking-before-coding",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1526925539332-aa3b66e35444",
+        width: 1200,
+        height: 630,
+        alt: "Abstract coding illustration"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Building an App Isn’t Hard — Thinking It Through Is",
+    description:
+      "Modern tooling is great, but architecture comes first. Why thinking matters more than coding.",
+    images: [
+      "https://images.unsplash.com/photo-1526925539332-aa3b66e35444"
+    ]
+  },
+  category: "Software Engineering",
+  tags: ["architecture", "domain design", "engineering", "analysis"],
+  publishedTime: "2025-01-15",
+  modifiedTime: "2025-01-15",
+  alternates: {
+    canonical: "/blog/thinking-before-coding"
+  },
+  robots: { index: true, follow: true }
+};
+
+
+<Cover
+  src="https://images.unsplash.com/photo-1526925539332-aa3b66e35444" 
+  alt="Coding is"
+  caption="unsplash.com"
+/>
+
+# Building an App Isn’t Hard — Thinking It Through Is
+
+Over the past few years, tools, frameworks, and code generators have evolved absurdly fast.  
+Laravel, Filament, Rails, Nest, Django, Spring… they all give you powerful shortcuts.
+
+But here’s the thing almost no one talks about:
+
+**You don’t build good software just because you picked the right stack.  
+The real work happens before you even touch a keyboard: thinking.**
+
+And that’s what separates someone who “knows how to click buttons” from someone who actually builds solid systems.
+
+---
+
+## The most important part isn’t the framework — it’s the domain
+
+If you know:
+
+- which entities actually exist in your system  
+- which rules belong to each one  
+- where they relate (and where they absolutely shouldn’t)  
+- where responsibilities belong  
+- how to separate behavior from data  
+- where to isolate side effects  
+- how to reduce coupling and increase cohesion  
+
+then **any stack becomes your ally**.
+
+Without that clarity, you can use the trendiest tech in the world and still create a system that collapses under its own weight.
+
+---
+
+## Modern tooling only works when the model is right
+
+Tools like Filament (or any blueprint-based generator) feel magical because the underlying architecture **reflects a well-designed domain**.
+
+When you define entities like:
+
+```json
+{
+  "User": ["name", "email", "role"],
+  "Order": ["status", "total", "created_at"]
+}
+
+```
+
+The results only turn out good because the domain itself already makes sense.
+
+Blueprints don’t fix conceptual chaos — they only accelerate what was already clear.
+
+---
+
+## Architecture is not pretty folders — it’s separation of responsibilities
+
+A lot of people mistake folder structure for architecture.
+
+But the real foundations live in concepts like:
+
+- low coupling  
+- high cohesion  
+- LSP, ISP, DIP (SOLID never died)  
+- programming to interfaces, not implementations  
+- entities independent from infrastructure  
+- clear, explicit use cases  
+- dependencies flowing outward, not inward  
+
+When you respect these principles:
+
+- refactoring stops hurting  
+- features stop breaking everything  
+- components become interchangeable  
+- you can swap DB, UI, or framework without rewriting the universe  
+
+Architecture is about **longevity**, not aesthetics.
+
+---
+
+## What’s missing today isn’t tech — it’s analysis
+
+Years ago, the workflow looked like this:
+
+1. analysts think  
+2. design is defined  
+3. developers implement  
+4. frontend refines  
+5. deploy happens  
+
+Today, step 1 practically disappeared.
+
+Everything becomes:
+
+- “deliver fast”  
+- “ship the MVP”  
+- “we’ll revisit later”  
+- “the client needed this yesterday”  
+
+The result?  
+Fragile systems with short lifespans.
+
+Not because tools are bad — but because the thinking was skipped.
+
+---
+
+## Building an app is easy — building it right is the challenge
+
+Modern stacks offer:
+
+- auth  
+- admin panels  
+- scaffolds  
+- ORMs  
+- routing  
+- components  
+- queues  
+- caching  
+- everything  
+
+But none of that replaces:
+
+- clear boundaries  
+- good domain models  
+- proper layering  
+- understanding the business logic  
+
+Tools can accelerate clarity — they cannot invent it.
+
+---
+
+## At the end of the day, programming is more about analysis than keystrokes
+
+If you understand the domain, name things properly, define clear responsibilities, separate layers, and follow a few timeless principles…
+
+…then yes: **building an app becomes easy**.
+
+The rest is tooling.  
+And good tooling is everywhere.
+
+The secret is simple:
+
+**architecture before technology,  
+domain before framework,  
+thinking before coding.**

@@ -1,1 +1,1 @@
-export const WEBSITE_URL = 'https://nim-fawn.vercel.app'
+export const WEBSITE_URL = 'https://andreriffen.github.io/resume'

@@ -1,42 +1,47 @@
-# Nim
+# 👨‍💻 André GB Riffen Farias
 
-<img src="/public/cover.jpg" alt="Cover image representing Nim, a personal website template" width="100%" />
+[![PHP](https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white)](https://www.php.net/)
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://laravel.com/)
+[![Java](https://img.shields.io/badge/Java-007396?logo=java&logoColor=white)](https://www.java.com/)
+[![Spring](https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white)](https://spring.io/)
+[![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vue](https://img.shields.io/badge/Vue-42B883?logo=vue.js&logoColor=white)](https://vuejs.org/)
+[![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)](https://angular.io/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)](https://git-scm.com/)
+[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](https://www.linux.org/)
 
-Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
+---
 
-Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
+### 📌 Web & Back-End Developer  
+Currently working with **Laravel** and **Spring**, building web applications and internal automation tools.  
+Focused on **clean code**, **simple architecture**, and **solid version control practices**.
 
-## Features
+---
 
-- Minimal one-page portfolio layout.
-- Blog support with MDX.
-- Responsive and accessible design.
-- Easy to use
-- [Motion-Primitives](https://motion-primitives.com) for animated components.
+### 🧠 Interests  
+- Clean Architecture & SOLID principles  
+- REST APIs and integrations  
+- Git, CI/CD, and environment automation  
+- Relational databases and performance tuning  
+- Refactoring and code readability  
 
-## Getting Started
+---
 
-For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md).
+### 🌎 Languages  
+🇬🇧 **English – CEFR B1+ (Intermediate)**  
+_Comprehensive reading & conversational ability._
 
-```bash
-git clone https://github.com/ibelick/nim.git
-cd nim
-npm install
-npm run dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔗 Contacts  
+🐙 **GitHub:** [github.com/andreriffen](https://github.com/andreriffen)  
+💼 **LinkedIn:** [linkedin.com/in/andre-gbf](https://linkedin.com/in/andre-gbf)  
+📫 **E-mail:** [andreriffen6@gmail.com](mailto:andreriffen6@gmail.com)
 
-## Contributing
+---
 
-Contributions are welcome! Feel free to open issues or submit pull requests to improve Nim.
-
-## Deployment
-
-You can deploy your site to any hosting platform that supports Next.js. For the easiest deployment experience, consider using Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fibelick%2Fnim&env=NEXT_PUBLIC_SITE_URL&project-name=nim&repository-name=nim&redirect-url=https%3A%2F%2Ftwitter.com%2Fibelick&demo-title=Nim&demo-description=Nim%20is%20a%20free%20and%20open-source%20minimal%20personal%20website%20template%20built%20with%20Next.js%2015%2C%20React%2019%2C%20and%20Motion-Primitives.&demo-url=https%3A%2F%2Fnim.vercel.app&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2Fibelick%2Fnim%2Frefs%2Fheads%2Fmain%2F.github%2Fassets%2Freadme.png&teamSlug=ibelick)
-
-## About
-
-Nim is designed to make personal branding effortless and beautiful. If you enjoy it, consider sharing it and exploring [Motion-Primitives Pro](https://pro.motion-primitives.com/).
+> *“The good thing about computers is that they do what you tell them to do.  
+> The bad thing about computers is that they do what you tell them to do.”*  
+> — **Andrew S. Tanenbaum**

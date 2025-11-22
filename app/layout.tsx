@@ -12,15 +12,24 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL('https://andreriffen.github.io/resume/'),
   alternates: {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: "Andre GB Farias",
+    template: '%s | Andre GB Farias'
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description: 'Andre GB Farias — Desenvolvedor web e estudante. Portfólio minimalista e objetivo.',
+  openGraph: {
+    images: [
+      {
+        url: '/og?title=Andre%20GB%20Farias',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 const geist = Geist({
