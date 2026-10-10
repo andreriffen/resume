@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     template: '%s | Andre GB Farias'
   },
   description: 'Andre GB Farias — Desenvolvedor web e estudante. Portfólio minimalista e objetivo.',
+  verification: {
+    google: 'wvMyiaoS1QFE6FvUWF4lmBddUhsAkMxos9_a7Ph2Ncs',
+  },
   openGraph: {
     images: [
       {
