@@ -91,7 +91,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     company: 'Assessoria Facilita',
     title: 'Web Programmer (CLT)',
     start: 'May 2025',
-    end: 'Present',
+    end: 'Jan 2026',
     link: 'https://github.com/andreriffen',
     id: 'work1',
   },
@@ -123,9 +123,9 @@ export const BLOG_POSTS: BlogPost[] = [
     uid: 'blog-1',
   },
   {
-    title: 'Why PHP Still Dominates the Internet — and Is More Relevant Than Ever',
+    title: 'Why PHP Still Powers a Large Part of the Web',
     description:
-      'PHP powers most of the modern web — not by accident. Its stability, ecosystem, and evolution make it more relevant today than ever.',
+      'A measured look at PHP usage, supported releases, and its place in web development.',
     link: '/blog/why-php-still-dominates',
     uid: 'blog-2',
   },
@@ -137,8 +137,8 @@ export const BLOG_POSTS: BlogPost[] = [
     uid: 'blog-3',
   },
     {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design.',
+      title: 'Design, AI, and the Work of Making Things Real',
+      description: 'AI can suggest interface ideas; context, implementation, and accessibility still need human judgment.',
     link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
     uid: 'blog-4',
   },
