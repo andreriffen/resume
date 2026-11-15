@@ -178,7 +178,7 @@ export default function Personal() {
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
                 <ProjectVideo
-                  src={project.og ?? project.video ?? undefined}
+                  src={project.image || project.video || undefined}
                   href={project.link}
                   title={project.name}
                   openLabel={messages.openProject}

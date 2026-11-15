@@ -1,0 +1,11 @@
+Font Awesome Free Brand Icons
+Copyright Fonticons, Inc.
+https://fontawesome.com/
+
+The PHP, Laravel, Java, Vue.js, Node.js, npm and Docker brand marks in the
+project thumbnails are based on Font Awesome Free Brand Icons and are licensed
+under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Other schematic glyphs are original simple vector drawings created for this
+thumbnail set.

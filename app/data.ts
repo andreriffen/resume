@@ -4,8 +4,8 @@ type Project = {
   link: string
   video: string
   id: string
+  image: string
   tech?: string
-  og?: string
 }
 
 type WorkExperience = {
@@ -29,6 +29,9 @@ type SocialLink = {
   link: string
 }
 
+const PROJECT_ASSET_BASE_PATH =
+  process.env.NODE_ENV === 'production' ? '/resume' : ''
+
 export const PROJECTS: Project[] = [
   {
     name: 'TallCMS',
@@ -39,8 +42,8 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/andreriffen/tallcms/',
     video: '',
     id: 'tallcms',
+    image: `${PROJECT_ASSET_BASE_PATH}/projects/tallcms.webp`,
     tech: 'Laravel / PHP',
-    og: 'https://og-image.vercel.app/TallCMS.png?theme=dark&md=1&fontSize=80px',
   },
   {
     name: 'Lavação',
@@ -51,8 +54,8 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/andreriffen/lavacao',
     video: '',
     id: 'lavacao',
+    image: `${PROJECT_ASSET_BASE_PATH}/projects/lavacao.webp`,
     tech: 'Java / JavaFX',
-    og: 'https://og-image.vercel.app/Lavacao.png?theme=dark&md=1&fontSize=80px',
   },
   {
     name: 'PHP OOP Projects',
@@ -63,8 +66,8 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/andreriffen/PHP-OOP-Projects',
     video: '',
     id: 'php-oop-projects',
+    image: `${PROJECT_ASSET_BASE_PATH}/projects/php-oop-projects.webp`,
     tech: 'PHP / OOP',
-    og: 'https://og-image.vercel.app/PHP%20OOP%20Projects.png?theme=dark&md=1&fontSize=80px',
   },
   {
     name: 'Java OOP Concepts',
@@ -75,8 +78,8 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/andreriffen/java-oop-concepts',
     video: '',
     id: 'java-oop-concepts',
+    image: `${PROJECT_ASSET_BASE_PATH}/projects/java-oop-concepts.webp`,
     tech: 'Java / OOP',
-    og: 'https://og-image.vercel.app/Java%20OOP%20Concepts.png?theme=dark&md=1&fontSize=80px',
   },
   {
     name: 'JavaFX MVC',
@@ -87,8 +90,8 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/andreriffen/javafx-mvc',
     video: '',
     id: 'javafx-mvc',
+    image: `${PROJECT_ASSET_BASE_PATH}/projects/javafx-mvc.webp`,
     tech: 'Java / JavaFX',
-    og: 'https://og-image.vercel.app/JavaFX%20MVC.png?theme=dark&md=1&fontSize=80px',
   },
   {
     name: 'Daisy Vue',
@@ -99,8 +102,8 @@ export const PROJECTS: Project[] = [
     link: 'https://andreriffen.github.io/daisy-vue/',
     video: '',
     id: 'daisy-vue',
+    image: `${PROJECT_ASSET_BASE_PATH}/projects/daisy-vue.webp`,
     tech: 'Vue / Vite / Tailwind / DaisyUI',
-    og: 'https://og-image.vercel.app/Daisy%20Vue.png?theme=dark&md=1&fontSize=80px',
   },
 ]
 
