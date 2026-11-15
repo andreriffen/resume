@@ -1,14 +1,17 @@
 'use client'
 import { TextEffect } from '@/components/ui/text-effect'
 import Link from 'next/link'
+import { useLocale } from '@/lib/locale'
 
 export function Header() {
+  const { messages } = useLocale()
+
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
         <Link
           href="/"
-          className="font-semibold text-black dark:text-white text-2xl md:text-3xl"
+          className="text-2xl font-semibold text-black md:text-3xl dark:text-white"
         >
           Andre GB Farias
         </Link>
@@ -19,7 +22,7 @@ export function Header() {
           className="text-zinc-600 dark:text-zinc-500"
           delay={0.5}
         >
-          Desenvolvedor Web
+          {messages.subtitle}
         </TextEffect>
       </div>
     </header>

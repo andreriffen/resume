@@ -1,6 +1,6 @@
 type Project = {
   name: string
-  description: string
+  description: Record<'en' | 'pt-BR', string>
   link: string
   video: string
   id: string
@@ -10,16 +10,16 @@ type Project = {
 
 type WorkExperience = {
   company: string
-  title: string
-  start: string
-  end: string
+  title: Record<'en' | 'pt-BR', string>
+  start: Record<'en' | 'pt-BR', string>
+  end: Record<'en' | 'pt-BR', string>
   link: string
   id: string
 }
 
 type BlogPost = {
-  title: string
-  description: string
+  title: Record<'en' | 'pt-BR', string>
+  description: Record<'en' | 'pt-BR', string>
   link: string
   uid: string
 }
@@ -32,7 +32,10 @@ type SocialLink = {
 export const PROJECTS: Project[] = [
   {
     name: 'TallCMS',
-    description: 'CMS e projeto com Laravel / PHP.',
+    description: {
+      en: 'CMS and project built with Laravel / PHP.',
+      'pt-BR': 'CMS e projeto com Laravel / PHP.',
+    },
     link: 'https://github.com/andreriffen/tallcms/',
     video: '',
     id: 'tallcms',
@@ -41,7 +44,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Lavação',
-    description: 'Aplicação desktop com Java e JavaFX.',
+    description: {
+      en: 'Desktop application built with Java and JavaFX.',
+      'pt-BR': 'Aplicação desktop com Java e JavaFX.',
+    },
     link: 'https://github.com/andreriffen/lavacao',
     video: '',
     id: 'lavacao',
@@ -50,7 +56,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'PHP OOP Projects',
-    description: 'Coleção de exemplos e conceitos OOP em PHP.',
+    description: {
+      en: 'A collection of PHP OOP examples and concepts.',
+      'pt-BR': 'Coleção de exemplos e conceitos de POO em PHP.',
+    },
     link: 'https://github.com/andreriffen/PHP-OOP-Projects',
     video: '',
     id: 'php-oop-projects',
@@ -59,7 +68,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Java OOP Concepts',
-    description: 'Exemplos e exercícios de OOP em Java.',
+    description: {
+      en: 'Examples and exercises on OOP in Java.',
+      'pt-BR': 'Exemplos e exercícios de POO em Java.',
+    },
     link: 'https://github.com/andreriffen/java-oop-concepts',
     video: '',
     id: 'java-oop-concepts',
@@ -68,7 +80,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'JavaFX MVC',
-    description: 'Sistema de vendas com Java e JavaFX (padrão MVC).',
+    description: {
+      en: 'Sales system built with Java and JavaFX (MVC pattern).',
+      'pt-BR': 'Sistema de vendas com Java e JavaFX (padrão MVC).',
+    },
     link: 'https://github.com/andreriffen/javafx-mvc',
     video: '',
     id: 'javafx-mvc',
@@ -77,7 +92,10 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Daisy Vue',
-    description: 'Boilerplate front-end com Vite, Vue, Tailwind e DaisyUI.',
+    description: {
+      en: 'Front-end boilerplate with Vite, Vue, Tailwind, and DaisyUI.',
+      'pt-BR': 'Boilerplate front-end com Vite, Vue, Tailwind e DaisyUI.',
+    },
     link: 'https://andreriffen.github.io/daisy-vue/',
     video: '',
     id: 'daisy-vue',
@@ -89,61 +107,93 @@ export const PROJECTS: Project[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'Assessoria Facilita',
-    title: 'Web Programmer (CLT)',
-    start: 'May 2025',
-    end: 'Jan 2026',
+    title: {
+      en: 'Web Programmer (CLT)',
+      'pt-BR': 'Programador Web (CLT)',
+    },
+    start: { en: 'May 2025', 'pt-BR': 'Mai. 2025' },
+    end: { en: 'Jan 2026', 'pt-BR': 'Jan. 2026' },
     link: 'https://github.com/andreriffen',
     id: 'work1',
   },
   {
     company: 'Assessoria Facilita',
-    title: 'Freelance / Contracted Developer',
-    start: 'Oct 2024',
-    end: 'Apr 2025',
+    title: {
+      en: 'Freelance / Contract Developer',
+      'pt-BR': 'Desenvolvedor Freelancer / Contratado',
+    },
+    start: { en: 'Oct 2024', 'pt-BR': 'Out. 2024' },
+    end: { en: 'Apr 2025', 'pt-BR': 'Abr. 2025' },
     link: 'https://github.com/andreriffen',
     id: 'work2',
   },
   {
     company: 'IFSC Federal Institute Santa Catarina',
-    title: 'Web Developer & IT Student',
-    start: 'Jan 2022',
-    end: 'Dec 2025',
+    title: {
+      en: 'Web Developer & IT Student',
+      'pt-BR': 'Desenvolvedor Web e estudante de TI',
+    },
+    start: { en: 'Jan 2022', 'pt-BR': 'Jan. 2022' },
+    end: { en: 'Dec 2025', 'pt-BR': 'Dez. 2025' },
     link: 'https://github.com/andreriffen',
     id: 'work3',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
-
   {
-    title: 'Building an App Isn’t Hard — Thinking It Through Is',
-    description:
-      'Modern tooling makes development faster than ever, but real software quality comes from clear thinking and domain understanding.',
+    title: {
+      en: 'Building an App Isn’t Hard — Thinking It Through Is',
+      'pt-BR': 'Criar um app não é difícil — difícil é pensar nele',
+    },
+    description: {
+      en: 'Modern tooling makes development faster than ever, but real software quality comes from clear thinking and domain understanding.',
+      'pt-BR':
+        'Ferramentas modernas aceleram o desenvolvimento, mas a qualidade do software depende de pensamento claro e compreensão do domínio.',
+    },
     link: '/blog/thinking-before-coding',
     uid: 'blog-1',
   },
   {
-    title: 'Why PHP Still Powers a Large Part of the Web',
-    description:
-      'A measured look at PHP usage, supported releases, and its place in web development.',
+    title: {
+      en: 'Why PHP Still Powers a Large Part of the Web',
+      'pt-BR': 'Por que o PHP ainda sustenta boa parte da web',
+    },
+    description: {
+      en: 'A measured look at PHP usage, supported releases, and its place in web development.',
+      'pt-BR':
+        'Uma análise do uso do PHP, das versões com suporte e do seu lugar no desenvolvimento web.',
+    },
     link: '/blog/why-php-still-dominates',
     uid: 'blog-2',
   },
   {
-    title: 'Front-End Isn’t “Just” Front-End',
-    description:
-      'A short thought on how front-end work connects deeply with the whole system — far from being “just visuals.”',
+    title: {
+      en: 'Front-End Isn’t “Just” Front-End',
+      'pt-BR': 'Front-end não é “só” front-end',
+    },
+    description: {
+      en: 'A short thought on how front-end work connects deeply with the whole system — far from being “just visuals.”',
+      'pt-BR':
+        'Uma reflexão sobre como o front-end se conecta profundamente ao sistema todo — muito além do visual.',
+    },
     link: '/blog/frontend-isnt-just-frontend',
     uid: 'blog-3',
   },
-    {
-      title: 'Design, AI, and the Work of Making Things Real',
-      description: 'AI can suggest interface ideas; context, implementation, and accessibility still need human judgment.',
+  {
+    title: {
+      en: 'Design, AI, and the Work of Making Things Real',
+      'pt-BR': 'Design, IA e o trabalho de tirar ideias do papel',
+    },
+    description: {
+      en: 'AI can suggest interface ideas; context, implementation, and accessibility still need human judgment.',
+      'pt-BR':
+        'A IA pode sugerir interfaces; contexto, implementação e acessibilidade ainda exigem julgamento humano.',
+    },
     link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
     uid: 'blog-4',
   },
-];
-
+]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {

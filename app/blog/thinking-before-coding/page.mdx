@@ -1,58 +1,58 @@
+import { LocalizedArticle, LocalizedCover } from '../localized-article'
+
 export const metadata = {
-  title: "Building an App Isn’t Hard — Thinking It Through Is",
+  title: 'Building an App Isn’t Hard — Thinking It Through Is',
   description:
-    "Modern tooling makes development faster than ever, but the real challenge is designing software that makes sense. Good apps start with clear thinking, not just good frameworks.",
-  authors: [
-    { name: "Andre GB Farias", url: "https://github.com/andreriffen" }
-  ],
+    'Modern tooling makes development faster than ever, but the real challenge is designing software that makes sense. Good apps start with clear thinking, not just good frameworks.',
+  authors: [{ name: 'Andre GB Farias', url: 'https://github.com/andreriffen' }],
   keywords: [
-    "software architecture",
-    "domain modeling",
-    "system design",
-    "DDD",
-    "engineering",
-    "web development"
+    'software architecture',
+    'domain modeling',
+    'system design',
+    'DDD',
+    'engineering',
+    'web development',
   ],
   openGraph: {
-    title: "Building an App Isn’t Hard — Thinking It Through Is",
+    title: 'Building an App Isn’t Hard — Thinking It Through Is',
     description:
-      "Modern tools accelerate development, but only clear domain thinking creates long-lasting software. Architecture first, technology second.",
-    type: "article",
-    url: "https://andreriffen.github.io/resume/blog/thinking-before-coding",
+      'Modern tools accelerate development, but only clear domain thinking creates long-lasting software. Architecture first, technology second.',
+    type: 'article',
+    url: 'https://andreriffen.github.io/resume/blog/thinking-before-coding',
     images: [
       {
-        url: "https://images.unsplash.com/photo-1526925539332-aa3b66e35444",
+        url: 'https://images.unsplash.com/photo-1526925539332-aa3b66e35444',
         width: 1200,
         height: 630,
-        alt: "Abstract coding illustration"
-      }
-    ]
+        alt: 'Abstract coding illustration',
+      },
+    ],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Building an App Isn’t Hard — Thinking It Through Is",
+    card: 'summary_large_image',
+    title: 'Building an App Isn’t Hard — Thinking It Through Is',
     description:
-      "Modern tooling is great, but architecture comes first. Why thinking matters more than coding.",
-    images: [
-      "https://images.unsplash.com/photo-1526925539332-aa3b66e35444"
-    ]
+      'Modern tooling is great, but architecture comes first. Why thinking matters more than coding.',
+    images: ['https://images.unsplash.com/photo-1526925539332-aa3b66e35444'],
   },
-  category: "Software Engineering",
-  tags: ["architecture", "domain design", "engineering", "analysis"],
-  publishedTime: "2025-01-15",
-  modifiedTime: "2025-01-15",
+  category: 'Software Engineering',
+  tags: ['architecture', 'domain design', 'engineering', 'analysis'],
+  publishedTime: '2025-01-15',
+  modifiedTime: '2025-01-15',
   alternates: {
-    canonical: "/blog/thinking-before-coding"
+    canonical: '/blog/thinking-before-coding',
   },
-  robots: { index: true, follow: true }
-};
+  robots: { index: true, follow: true },
+}
 
-
-<Cover
-  src="https://images.unsplash.com/photo-1526925539332-aa3b66e35444" 
+<LocalizedCover
+  src="https://images.unsplash.com/photo-1526925539332-aa3b66e35444"
   alt="Coding is"
+  altPtBR="Programar é"
   caption="unsplash.com"
 />
+
+<LocalizedArticle slug="thinking-before-coding">
 
 # Building an App Isn’t Hard — Thinking It Through Is
 
@@ -72,13 +72,13 @@ And that’s what separates someone who “knows how to click buttons” from so
 
 If you know:
 
-- which entities actually exist in your system  
-- which rules belong to each one  
-- where they relate (and where they absolutely shouldn’t)  
-- where responsibilities belong  
-- how to separate behavior from data  
-- where to isolate side effects  
-- how to reduce coupling and increase cohesion  
+- which entities actually exist in your system
+- which rules belong to each one
+- where they relate (and where they absolutely shouldn’t)
+- where responsibilities belong
+- how to separate behavior from data
+- where to isolate side effects
+- how to reduce coupling and increase cohesion
 
 then **any stack becomes your ally**.
 
@@ -97,7 +97,6 @@ When you define entities like:
   "User": ["name", "email", "role"],
   "Order": ["status", "total", "created_at"]
 }
-
 ```
 
 The results only turn out good because the domain itself already makes sense.
@@ -112,20 +111,20 @@ A lot of people mistake folder structure for architecture.
 
 But the real foundations live in concepts like:
 
-- low coupling  
-- high cohesion  
-- LSP, ISP, DIP (SOLID never died)  
-- programming to interfaces, not implementations  
-- entities independent from infrastructure  
-- clear, explicit use cases  
-- dependencies flowing outward, not inward  
+- low coupling
+- high cohesion
+- LSP, ISP, DIP (SOLID never died)
+- programming to interfaces, not implementations
+- entities independent from infrastructure
+- clear, explicit use cases
+- dependencies flowing outward, not inward
 
 When you respect these principles:
 
-- refactoring stops hurting  
-- features stop breaking everything  
-- components become interchangeable  
-- you can swap DB, UI, or framework without rewriting the universe  
+- refactoring stops hurting
+- features stop breaking everything
+- components become interchangeable
+- you can swap DB, UI, or framework without rewriting the universe
 
 Architecture is about **longevity**, not aesthetics.
 
@@ -135,20 +134,20 @@ Architecture is about **longevity**, not aesthetics.
 
 Years ago, the workflow looked like this:
 
-1. analysts think  
-2. design is defined  
-3. developers implement  
-4. frontend refines  
-5. deploy happens  
+1. analysts think
+2. design is defined
+3. developers implement
+4. frontend refines
+5. deploy happens
 
 Today, step 1 practically disappeared.
 
 Everything becomes:
 
-- “deliver fast”  
-- “ship the MVP”  
-- “we’ll revisit later”  
-- “the client needed this yesterday”  
+- “deliver fast”
+- “ship the MVP”
+- “we’ll revisit later”
+- “the client needed this yesterday”
 
 The result?  
 Fragile systems with short lifespans.
@@ -161,22 +160,22 @@ Not because tools are bad — but because the thinking was skipped.
 
 Modern stacks offer:
 
-- auth  
-- admin panels  
-- scaffolds  
-- ORMs  
-- routing  
-- components  
-- queues  
-- caching  
-- everything  
+- auth
+- admin panels
+- scaffolds
+- ORMs
+- routing
+- components
+- queues
+- caching
+- everything
 
 But none of that replaces:
 
-- clear boundaries  
-- good domain models  
-- proper layering  
-- understanding the business logic  
+- clear boundaries
+- good domain models
+- proper layering
+- understanding the business logic
 
 Tools can accelerate clarity — they cannot invent it.
 
@@ -196,3 +195,5 @@ The secret is simple:
 **architecture before technology,  
 domain before framework,  
 thinking before coding.**
+
+</LocalizedArticle>
